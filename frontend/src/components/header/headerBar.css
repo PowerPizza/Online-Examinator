@@ -1,0 +1,63 @@
+.header_main_body{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0px 0px 4px 0px black;
+    user-select: none;
+}
+
+.header_main_body .app_icon{
+    width: 80px;
+    margin-left: 5px;
+}
+
+.header_main_body .account_btn{
+    background-color: transparent;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 1px black;
+    margin-left: auto;
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header_main_body .account_btn .user_info{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 300px;
+    height: fit-content;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: left;
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: auto;
+    user-select: text;
+}
+.header_main_body .account_btn .user_info .logout_btn{
+    display: flex;
+    background-color: #ff6c67;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 20px;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        box-shadow: 0px 0px 3px 0px red;
+    }
+}

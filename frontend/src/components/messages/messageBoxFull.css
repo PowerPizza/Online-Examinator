@@ -1,0 +1,32 @@
+.msgBoxFull_main_body{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 3px;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: red;
+    padding: 5px;
+}
+
+.msgBoxFull_main_body .icon_{
+    margin-left: 10px;
+}
+
+.msgBoxFull_main_body .msg_{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.msgBoxFull_main_body .close_btn{
+    background-color: transparent;
+    border: 0;
+    border-left: 2px solid rgba(255, 0, 0, 0.322);
+    margin-left: auto;
+    text-align: center;
+    *{
+        cursor: pointer;
+    }
+}

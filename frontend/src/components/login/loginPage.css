@@ -1,0 +1,58 @@
+.login_main_body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 350px;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    margin: auto;
+    gap: 5px;
+    user-select: none;
+}
+
+.login_main_body .heading_login{
+    color: purple;
+}
+
+.login_main_body label{
+    font-size: 1.3rem;
+    color: purple;
+}
+
+.login_main_body input{
+    font-size: 1.3rem;
+    padding: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    color: purple;
+    &:focus{
+        box-shadow: 0px 0px 4px 2px rgb(46, 195, 253);
+    }
+}
+.login_main_body .password_holder{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login_main_body .submit_btn{
+    background-color: #2ecc71;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: 3px solid transparent;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        color: #2ecc71;
+        border: 3px solid #2ecc71;
+        background-color: white;
+    }
+}

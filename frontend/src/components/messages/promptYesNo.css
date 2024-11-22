@@ -1,0 +1,64 @@
+.promptysno_main_body{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    user-select: none;
+}
+.promptysno_main_body .content_prompt_ysno{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px gray;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: fit-content;
+    padding: 5px;
+}
+.promptysno_main_body .content_prompt_ysno .msg_{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 5px;
+    color: purple;
+    font-weight: 500;
+    user-select: text;
+    word-wrap: break-word;
+}
+
+.promptysno_main_body .content_prompt_ysno .btn{
+    font-size: 1.3rem;
+    margin: 4px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 40px;
+}
+.promptysno_main_body .content_prompt_ysno .btn.yes{
+    background-color: rgb(37, 185, 81);
+    &:hover{
+        background-color: white;
+        color: rgb(37, 185, 81);
+        border-color: rgb(37, 185, 81);
+    }
+}
+.promptysno_main_body .content_prompt_ysno .btn.no{
+    background-color: #e74c3c;
+    &:hover{
+        background-color: white;
+        color: #e74c3c;
+        border-color: #e74c3c;
+    }
+}

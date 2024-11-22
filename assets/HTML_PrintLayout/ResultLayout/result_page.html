@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        .main_body{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .result_h{
+            text-align: center;
+            font-weight: 500;
+            margin: 0;
+            background-color: rgb(255, 173, 173);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        .exam_h{
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        .primary_info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            border: 1px solid gray;
+            height: 70px;
+            background-color: rgb(255, 251, 247);
+            margin: 2px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .primary_info span{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: rgb(53, 53, 53);
+        }
+        .primary_info .marks, .primary_info .sub{
+            margin-left: auto;
+        }
+
+        .question_box{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red;
+            background-color: rgb(255, 210, 210);
+            margin: 2px;
+            padding: 5px;
+        }
+        .question_box .question, .question_box .opt{
+            font-size: 1.3rem;
+        }
+        .question_box .opt{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_body">
+        <h2 class="result_h">RESULT ANSWER SHEET</h2>
+        <h2 class="exam_h"></h2>
+        <div class="primary_info">
+            <span class="uid">USER ID : </span>
+            <span class="marks">MARKS : </span>
+            <span class="uname">USER NAME : </span>
+            <span class="sub">SUBJECT : </span>
+        </div>
+        <!-- <div class="question_box">
+            <span class="question">__QUESTION__</span>
+            <span class="opt">__OPTION__</span>
+            <span class="opt">__OPTION__</span>
+            <span class="opt">__OPTION__</span>
+            <span class="opt">__OPTION__</span>
+        </div> -->
+    </div>
+</body>
+</html>

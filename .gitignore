@@ -1,0 +1,7 @@
+/built
+/dist
+/PRODUCTION
+/test_and_other
+main.spec
+/__pycache__
+/.idea

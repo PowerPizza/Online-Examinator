@@ -1,0 +1,57 @@
+.timesup_main_body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+.timesup_main_body .timesup_layout{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 500px;
+    height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 2px lightgray;
+    background-color: white;
+    padding: 5px;
+    gap: 10px;
+}
+.timesup_main_body .timesup_layout .clock_icon{
+    width: 150px;
+    aspect-ratio: 1/1;
+    margin-left: 5px;
+}
+.timesup_main_body .timesup_layout .titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timesup_main_body .timesup_layout .titles .title_timesup{
+    font-size: 3.1rem;
+    margin: 0;
+    text-align: center;
+    color: rgb(46, 46, 46);
+}
+.timesup_main_body .timesup_layout .titles .sub_title{
+    font-size: 1.1rem;
+    color: rgb(97, 97, 97);
+}
+.timesup_main_body .timesup_layout .titles .btn.logout{
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 0px 2px 2px blue;
+    }
+}
