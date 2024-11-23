@@ -53,6 +53,7 @@ class StringDialog(Toplevel):
     string_val = None
     submit_command = lambda val: val
     close_at_submission = None
+    label_prompt = None
 
     def __init__(self, master, window_title, prompt_label, submit_command, btn_text="submit", close_at_submission=True):
         super().__init__(master)
@@ -61,12 +62,14 @@ class StringDialog(Toplevel):
         self.close_at_submission = close_at_submission
 
         self.title(window_title)
-        self.geometry(f"350x150+{self.winfo_screenwidth()//2 - 350//2}+{self.winfo_screenheight()//2 - 100}")
+        self.geometry(f"350x250+{self.winfo_screenwidth()//2 - 350//2}+{self.winfo_screenheight()//2 - 180}")
         self.transient(master)
         self.config(bg="#fffff2")
         self.resizable(False, False)
 
-        Label(self, text=prompt_label, font=("Helvetica", 14), bg="#fffff2", fg="blue").pack(anchor=NW, padx=5, pady=5)
+        self.update()
+        self.label_prompt = Label(self, text=prompt_label, font=("Helvetica", 14), bg="#fffff2", fg="blue", wraplength=self.winfo_width())
+        self.label_prompt.pack(anchor=NW, padx=5, pady=5)
         input_ = Entry(self, textvariable=self.string_val, width=50, font=("Helvetica", 12), highlightthickness=2, highlightbackground="#292929")
         input_.pack(padx=15, pady=5, ipady=5)
         input_.focus_set()
