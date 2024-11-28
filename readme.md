@@ -27,8 +27,29 @@ It enables the printing and distribution of individual marksheets with HTML form
 A timer can also be added while starting the exam so that as soon as times up exam gets turned off and the users who haven't submitted will got screen of *times up*.
 
 ### 📌 Resubmittion Control
-
 While starting the exam or even while its running you can control weather a user can resubmit there answer or not.
+
+## ⚙️ Installation
+🚀 [Download](https://drive.google.com/file/d/1VZKQHKW-CWbZ8IPhOLnZjjiXlbHmAcsp/view?usp=sharing) installer for windows 10 or higher.
+
+## Question Formatting Guidelines
+To format questions and answers correctly, follow these simple rules:
+
+**Questions**
+1. Begin each question with `??`
+2. Leave a blank line before starting a new question.
+
+**Options**
+1. Start every option with `*`
+2. If an option is correct, it should end with `||`
+
+**Multiple Correct Options**
+1. You can have multiple correct options in a question.
+Ensure all correct options end with ||.
+
+**Notes on Syntax**
+1. Extra spaces at the beginning or end of lines do not affect the format.
+2. A new question should always start after a blank line for better readability.
 
 ## 🎬 Screenshots
 > Home Tab
@@ -57,8 +78,6 @@ While starting the exam or even while its running you can control weather a user
 - While hosting exam admin has full control over `allowing resubmittion` and `auto stop if timer ends`
 - Logs of each submittion can be traced.
 
-## ⚙️ Installation
-🚀 [Download](https://drive.google.com/file/d/1VZKQHKW-CWbZ8IPhOLnZjjiXlbHmAcsp/view?usp=sharing) installer for windows 10 or higher.
 
 ## 🌐 Technologies Used
 ### 📌 Programming Languages
