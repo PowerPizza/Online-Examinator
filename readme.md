@@ -32,8 +32,8 @@ While starting the exam or even while its running you can control weather a user
 ## ⚙️ Installation
 🚀 [Download](https://drive.google.com/file/d/1VZKQHKW-CWbZ8IPhOLnZjjiXlbHmAcsp/view?usp=sharing) installer for windows 10 or higher.
 
-## Question Formatting Guidelines
-To format questions and answers correctly, follow these simple rules:
+## Question Text File Formatting Guidelines
+To format questions and answers correctly while making text file to import into the software, follow these simple rules:
 
 **Questions**
 1. Begin each question with `??`
